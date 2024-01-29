@@ -18,7 +18,7 @@ app.use(express.urlencoded({extended:true}))
 app.use('/' , moviesRoutes);
 app.use('/' , songRoutes );
 
-app.get('/home' , (req ,res)=>{
+app.get('/' , (req ,res)=>{
     res.send('home hit');
 })
 

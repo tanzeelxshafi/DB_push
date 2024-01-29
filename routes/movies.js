@@ -36,7 +36,7 @@ router.post('/movie', async (req,res)=>{
     const newMovie = new Movie(req.body);
     await newMovie.save();
     console.log(newMovie);
-    res.redirect('/home');
+    res.redirect('/');
 
 })
 

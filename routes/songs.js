@@ -29,7 +29,7 @@ router.get('/song', (req, res) => {
 
 
 //post for song
-app.post('/song', async (req,res)=>{
+router.post('/song', async (req,res)=>{
     //no error of db
     console.log(req.body)
     const newSong = new Song(req.body);
